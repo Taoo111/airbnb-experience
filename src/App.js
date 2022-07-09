@@ -7,12 +7,14 @@ export default function App() {
   const dataCards = data.map((item) => {
     return (
       <Card
+        key={item.id}
         coverImg={item.coverImg}
         rating={item.stats.rating}
         review={item.stats.reviewCount}
         location={item.location}
         title={item.title}
         price={item.price}
+        openSpots={item.openSpots}
       />
     );
   });
@@ -20,7 +22,9 @@ export default function App() {
     <div className="container">
       <Navbar />
       <Hero />
-      {dataCards}
+      <section className="cards-list">
+        {dataCards}
+      </section>
     </div>
   );
 }

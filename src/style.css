@@ -9,12 +9,12 @@ body {
   background: #f5f5f5;
 }
 
-.gray{
-    color: #918E9B;
+.gray {
+  color: #918e9b;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 
 nav {
@@ -48,20 +48,53 @@ nav {
 /* Card styles */
 
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
   width: 200px;
   font-size: 18px;
 }
 
-.card--image{
-    width: 100%;
-    border-radius: 9px;
+.cards-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin: 2.5rem 0;
 }
 
-.card--stats{
-    display: flex;
-    align-items: center;
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
 }
 
-.card--star{
-    height: 14px;
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--price {
+  margin-top: 0.5rem;
+}
+
+.card--badge{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-weight: bold;
 }

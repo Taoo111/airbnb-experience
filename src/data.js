@@ -30,7 +30,7 @@ export default [
   },
   {
     id: 3,
-    title: "Group Mountain Biking",
+    title: "Group Mountain Biking and Offroad",
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
